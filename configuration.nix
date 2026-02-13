@@ -5,6 +5,7 @@
     [
       modules/network.nix
       modules/gaming.nix
+      modules/nvidia.nix
       ./hardware-configuration.nix
     ];
 
@@ -29,12 +30,14 @@
   };
 
   # Desktop config
-  services.xserver.enable = true;
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "intl";
+  services.xserver = {
+    enable = true;
+    xkb = {
+      layout = "us";
+      variant = "intl";
+    };
   };
   console.keyMap = "us-acentos";
 
