@@ -6,6 +6,8 @@
       modules/network.nix
       modules/gaming.nix
       modules/nvidia.nix
+      modules/dev.nix
+      modules/desktop.nix
       ./hardware-configuration.nix
     ];
 
