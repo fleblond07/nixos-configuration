@@ -3,6 +3,7 @@
 {
   imports =
     [
+      modules/network.nix
       ./hardware-configuration.nix
     ];
 
@@ -10,12 +11,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  # Networking configuration
-  networking.hostName = "nixos-main";
-  networking.networkmanager.enable = true;
-  services.printing.enable = true;
-  networking.firewall.allowedTCPPorts = [ 24800 ];
   
   # Global config
   time.timeZone = "Europe/Paris";
