@@ -68,6 +68,7 @@
   environment.systemPackages = with pkgs; [
 	deskflow
 	git
+	protonvpn-gui
   ];
 
   system.stateVersion = "25.11";
