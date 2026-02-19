@@ -9,6 +9,7 @@
     nodejs_22
     poetry
     docker-compose
+    opencode
   ];
 
   fonts.packages = with pkgs; [
