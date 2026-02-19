@@ -69,6 +69,8 @@
 	deskflow
 	git
 	protonvpn-gui
+	obsidian
+	logiops
   ];
 
   system.stateVersion = "25.11";
