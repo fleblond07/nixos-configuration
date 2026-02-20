@@ -21,6 +21,9 @@
 
     # Notes, todo
     obsidian
+
+    # TEST TO REMOVE LATER
+    lan-mouse
   ];
 
   fonts.packages = with pkgs; [

@@ -31,17 +31,6 @@
     LC_TIME = "fr_FR.UTF-8";
   };
 
-  # Desktop config
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
-  services.xserver = {
-    enable = true;
-    xkb = {
-      layout = "us";
-      variant = "intl";
-    };
-  };
-  console.keyMap = "us-acentos";
 
   # Sound config
   services.pulseaudio.enable = false;
