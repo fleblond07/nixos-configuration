@@ -65,13 +65,6 @@
   # Programs
   programs.firefox.enable = true;
   nixpkgs.config.allowUnfree = true;
-  environment.systemPackages = with pkgs; [
-	deskflow
-	git
-	protonvpn-gui
-	obsidian
-	logiops
-  ];
 
   system.stateVersion = "25.11";
 

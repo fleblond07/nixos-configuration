@@ -2,14 +2,25 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # Terminal and essentials stuff
     kitty
     neovim
     lua
+    git
+    deskflow
+    lazygit
+
+    # Dev deps
     python3
     nodejs_22
     poetry
     docker-compose
+
+    # IA
     opencode
+
+    # Notes, todo
+    obsidian
   ];
 
   fonts.packages = with pkgs; [

@@ -9,4 +9,10 @@ programs.steam = {
   localNetworkGameTransfers.openFirewall = true;
 };
 
+
+  environment.systemPackages = with pkgs; [
+    logiops
+    protonvpn-gui
+  ];
+
 }
